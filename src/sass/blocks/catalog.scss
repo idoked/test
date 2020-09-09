@@ -1,0 +1,21 @@
+.catalog {
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__header {
+		padding: 50px 0 62px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__products {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 33.3% 33.3% 33.3%;
+	}
+}

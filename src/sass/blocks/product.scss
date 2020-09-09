@@ -1,0 +1,101 @@
+.product {
+	width: 270px;
+	background: $white;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	margin: 0 0 30px auto;
+
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 1px solid #E1E1E1;
+		border-top: none;
+		padding: 25px 20px;
+		height: 100%;
+		border-radius: 0 0 6px 6px;
+	}
+
+	&__title {
+		margin: 0 0 10px 0;
+	}
+
+	&__specs {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+	
+	}
+
+	&__spec-item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		font-size: 14px;
+		line-height: 17px;
+		color: $black;
+		padding: 7px 0;
+
+		img {
+			margin-left: 8px;
+		}
+
+		strong {
+			font-weight: 500;
+			padding-left: 5px;
+		}
+	}
+
+	&__button {
+		appearance: none;
+		border: none;
+		outline: none;
+		background: #FF7236;
+		height: 46px;
+		width: 100%;
+		position: relative;
+		padding: 0 20px 0 0;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 25px;
+		font-weight: 600;
+		font-size: 14px;
+		color: $white;
+		transition: .2s background-color ease;
+
+		&:hover {
+			background-color: #F05B1B;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			right: 6px;
+			transition: .2s box-shadow ease;
+			top: 50%;
+			border-radius: 100%;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			transform: translateY(-50%);
+			background-image: url(../img/general/paw.svg);
+		}
+
+		&:hover::before{
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+		}
+	}
+}

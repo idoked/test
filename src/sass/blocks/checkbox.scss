@@ -1,0 +1,30 @@
+.checkbox {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	user-select: none;
+	font-size: 14px;
+	line-height: 17px;
+	width: fit-content;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkmark {
+		height: 20px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 20px;
+		border: 1px solid #E1E1E1;
+		margin-right: 10px;
+	}
+
+	& input:checked ~ .checkmark {
+		background-image: url(../img/general/check.svg)
+	}
+}

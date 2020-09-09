@@ -1,0 +1,50 @@
+::placeholder {
+	color: #777;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  padding-top: $header-height;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $black;
+  font-size: 14px;
+  line-height: 17px;
+	background-color: $white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #151B28;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}

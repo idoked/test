@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+
+          <a href="/" class="logo">
+          <img src="img/general/logo.svg" alt="Logo">
+					</a>
+					
+          <nav class="nav">
+            <a href="#">Почему мы?</a>
+            <a href="#">Номера</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Как нас найти</a>
+					</nav>
+					
+        </div>
+      </div>
+		</header>
+		
+    <div class="catalog">
+      <div class="container">
+
+        <div class="catalog__header">
+          <h1>Наши номера</h1>
+				</div>
+				
+        <div class="catalog__wrapper">
+					<form class="filter" id="filter" onsubmit="filterSubmit(event)">
+					
+						<div class="filter__head">Площадь</div>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="0.63">
+							<span class="checkmark"></span>
+							0.63 м2
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="0.90">
+							<span class="checkmark"></span>
+							0.90 м2
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="1.13">
+							<span class="checkmark"></span>
+							1.13 м2
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="1.56">
+							<span class="checkmark"></span>
+							1.56 м2
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="2.56">
+							<span class="checkmark"></span>
+							2.56 м2
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="area" value="2.88">
+							<span class="checkmark"></span>
+							2.88 м2
+						</label>
+
+						<div class="filter__head">Оснащение номера</div>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="equipment" value="empty">
+							<span class="checkmark"></span>
+							Пустой номер
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="equipment" value="sunbed">
+							<span class="checkmark"></span>
+							Лежак
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="equipment" value="scratching_post">
+							<span class="checkmark"></span>
+							Когтеточка
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="equipment" value="playground">
+							<span class="checkmark"></span>
+							Игровой комплекс
+						</label>
+						
+						<label class="checkbox">
+							<input type="checkbox" name="equipment" value="home">
+							<span class="checkmark"></span>
+							Домик
+						</label>
+						
+            <input class="filter__submit" type="submit" value="Применить">
+            <input onclick="filterReset()" class="filter__reset" type="button" value="Сбросить фильтр">
+					</form>
+					
+					<div id="catalog" class="catalog__products"></div>
+					
+        </div>
+      </div>
+		</div>
+		
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+
+          <div class="footer__info">
+            <div class="footer__copyright">
+              <img src="img/general/copyright.svg" alt="Copyright">
+              2020 Все права защищены
+            </div>
+            <a href="#">Политика конфиденциальности</a>
+					</div>
+					
+          <div class="made">
+            Сделано в <a href="#">Koteyka_Production</a>
+					</div>
+					
+        </div>
+      </div>
+		</footer>
+		
+    <script src="mocData.js"></script>
+		<script src="js/common.min.js"></script>
+		
+  </body>
+</html>
